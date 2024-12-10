@@ -5,7 +5,7 @@ Summary:  Prometheus exporter for stats in slurm accounting cgroups
 
 License:  Apache License 2.0
 URL:      https://github.com/guilbaults/slurm-job-exporter
-Source0:  https://github.com/guilbaults/%{name}/archive/refs/tags/v%{version}.tar.gz
+Source0:  https://github.com/mmarcrr/%{name}/archive/refs/tags/v%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:	systemd
@@ -38,6 +38,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_unitdir}/slurm-job-exporter.service
 
 %changelog
+* Mon Dec 10 2024 Marc Rodriguez <mmarcrr@gmail.com> 0.4.4-1
+- Adding support for multi-host
 * Mon Aug 05 2024 Simon Guilbault <simon.guilbault@calculquebec.ca> 0.4.4-1
 - Removing support for EL7
 * Mon Aug 05 2024 Simon Guilbault <simon.guilbault@calculquebec.ca> 0.4.3-1
